@@ -1,0 +1,21 @@
+.article {
+    padding: 12px;
+    text-align: center;
+}
+
+.article > img {
+    width: 50%;
+    height: auto;
+}
+
+.article > p {
+    margin-top: 10px;
+}
+
+.article-title {    
+    font-size: 12px;
+}
+
+.article-desc {
+    font-size: 10px;
+}

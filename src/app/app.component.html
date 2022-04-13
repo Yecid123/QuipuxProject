@@ -1,0 +1,48 @@
+
+<div class="header" id="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-sm-12" style="text-align: left;">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12"  *ngIf="location != '/home' && location != '/'">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a routerLink="'/home'">Home</a></li>
+                                <li class="breadcrumb-item"> {{ location }} </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 " *ngIf="location == '/home' || location == '/'" >
+                        <img style="width: 140px; height: auto;" src="./assets/Img/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="container" >
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="header_img">
+                                <i class='bx bxs-user-circle nav_icon' style="font-size:35px"></i>
+                            </div>
+                        </div>
+                        <div class="col-6" style="padding-top: 10px;">                            
+                            <div class="dropdown">
+                                <h5 style="font-size: 13px; cursor: pointer;" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><b>Usuario Apellido <i class='bx bx-chevron-down'></i></b></h5>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Ver mi perfil</a></li>
+                                  <li><a class="dropdown-item" href="#">Configuración</a></li>
+                                  <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-menu></app-menu>
+<br>
+<div id="prueba">
+    <router-outlet></router-outlet>
+</div>
